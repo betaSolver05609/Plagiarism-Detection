@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+ printf("Enter a number");
+int n,t,d,r;
+
+scanf("%d",&n);
+
+t=n;
+while(t>0)
+{
+ d=t%10;
+ r=d+r*10;
+ t=t/10
+ }
+ 
+ if(r!=t)
+ {
+  printf("Not pallindrome");
+}
+else
+{
+ printf("Not Pallindrome");
+
+}
+
+return 0;
+
+
+}

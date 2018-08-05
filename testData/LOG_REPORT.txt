@@ -1,0 +1,65 @@
+DATED:2018-05-11 11:09:42.788000
+
+STARTING THE PROCESS....
+
+LOOKING FOR EXCEPTIONS....
+
+IMPORTING DISUTILS.....
+
+WORKING WITH DLL's......
+
+STARTING STAGE 1....
+
+COMPUTING BIND SCORE FOR FILES....
+
+STATUS AFTER COMPUTING BIND SCORE.....
+
+STAGE 1 ANALYSIS....
+
+FILENAME	BIND SCORE
+
+102.txt		136
+105.txt		136
+125.txt		79
+130.txt		164
+160.txt		164
+177.txt		56
+225.txt		67
+92.txt		10
+96.txt		13
+
+FORMING CLUSTERS.....
+
+CLUSTERS FORMED....
+
+FILES UNDER SCANNER....
+
+FILENAME1	FILENAME2	CLUSTER NUMBER
+
+102.txt		105.txt		[0, 1]
+130.txt		160.txt		[3, 4]
+92.txt		96.txt		[7, 8]
+
+EXECUTING WALKTHROUGH SIMULATION FOR CLUSTERS.....
+
+GENERATED SEQUENCES
+
+FILENAME	WALKTHROUGH SILMUATION
+
+102.txt	[('{', 10), ('{', 20), ('{', 10), ('{', 20), ('{', 68)]
+105.txt	[('{', 10), ('{', 20), ('{', 10), ('{', 20), ('{', 68)]
+130.txt	[('{', 10), ('{', 20), ('{', 10), ('{', 20), ('{', 68)]
+160.txt	[('{', 3), ('{', 13), ('{', 23), ('{', 8), ('{', 18), ('{', 28), ('{', 94)]
+92.txt	[('{', 3), ('{', 13), ('{', 23), ('{', 8), ('{', 18), ('{', 28), ('{', 94)]
+96.txt	[('{', 3), ('{', 13), ('{', 23), ('{', 8), ('{', 18), ('{', 28), ('{', 94)]
+
+
+CALCULATING OUTCOMES...
+
+FINAL OUTCOME.......
+
+FILENAME1	FILENAME2	CERTAINITY OF PLAGIARISM	STATUS
+
+102.txt		105.txt			100%			PLAGIARIZED
+130.txt		160.txt			100%			PLAGIARIZED
+92.txt		96.txt			96%			PLAGIARIZED

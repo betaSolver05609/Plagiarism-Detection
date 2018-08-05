@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main()
+{
+int n,t,d,r;
+scanf("%d", &n);
+t=n;
+while(t!=0)
+{
+d=t%10;
+r=d+r*10;
+t=t/10;
+}
+if(r!=t)
+{
+printf("Pallindrome");
+}
+else
+{
+printf("Not Pallindrome");
+}
+return 0;
+}
