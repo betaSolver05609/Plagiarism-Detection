@@ -1,0 +1,123 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 1rem 2rem;
+}
+
+.navbar .logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 1.5rem;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar .nav-links a:hover {
+  color: #00c896;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(to right, #00c896, #007f73);
+  color: white;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  background: #fff;
+  color: #007f73;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e3e3e3;
+}
+
+/* Sections */
+.section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #007f73;
+}
+
+.section ul, .section ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+/* Report Boxes */
+.report-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #222;
+  color: #fff;
+  margin-top: 2rem;
+}

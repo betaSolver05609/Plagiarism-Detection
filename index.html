@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CheatX - Plagiarism Detector for C Programs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">CheatX</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#workflow">How It Works</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#reports">Reports</a></li>
+        <li><a href="#contribute">Contribute</a></li>
+        <li><a href="https://github.com/YourUsername/CheatX" target="_blank">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>CheatX</h1>
+      <p><strong>Detect plagiarism in C programming assignments with accuracy & transparency.</strong></p>
+      <p>CheatX analyzes source code using structural, syntactic, and control-flow heuristics to identify suspicious similarities between student submissions.</p>
+      <a href="https://github.com/YourUsername/CheatX" target="_blank" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <h2>About CheatX</h2>
+    <p>
+      Academic dishonesty in programming assignments is a growing concern. Simple string comparison or naive diff tools fail to detect plagiarism when students 
+      rename variables, change formatting, or restructure their code. 
+    </p>
+    <p>
+      <strong>CheatX</strong> was built to solve this challenge. Written in Python, it detects similarities between <em>C language source files</em> 
+      by examining deeper program structures, control flow, and function-level features. It provides both a detailed log of the analysis and a 
+      final plagiarism report with certainty percentages.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="section">
+    <h2>Key Features</h2>
+    <ul>
+      <li><strong>Bind Score Analysis</strong> – calculates heuristic similarity scores based on variables, functions, keywords, and libraries.</li>
+      <li><strong>Control Flow Simulation</strong> – simulates program execution by analyzing curly brace scopes to compare logical flow.</li>
+      <li><strong>Automated Clustering</strong> – groups potentially plagiarized files into clusters for side-by-side analysis.</li>
+      <li><strong>Report Generation</strong> – produces <code>LOG_REPORT.txt</code> (step-by-step process) and <code>FINAL REPORT.txt</code> (plagiarism results).</li>
+      <li><strong>User-Friendly UI</strong> – a simple Tkinter interface allows users to provide a dataset path and generate reports instantly.</li>
+    </ul>
+  </section>
+
+  <!-- How It Works -->
+  <section id="workflow" class="section">
+    <h2>How It Works</h2>
+    <div>
+      <ol>
+        <li><strong>Stage 1 – Bind Score:</strong> Each file is analyzed for variables, functions, keywords, and libraries. A numeric score is computed.</li>
+        <li><strong>Stage 2 – Clustering:</strong> Files with similar bind scores are grouped together for deeper comparison.</li>
+        <li><strong>Stage 3 – Walkthrough Simulation:</strong> The control flow of each file is simulated and compared within clusters.</li>
+        <li><strong>Report Generation:</strong> Results are compiled into detailed log and final outcome reports, including certainty percentages.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Usage -->
+  <section id="usage" class="section">
+    <h2>Usage Instructions</h2>
+    <p><strong>Prerequisites:</strong></p>
+    <ul>
+      <li>Python 2.x/3.x</li>
+      <li>Tkinter library (for GUI)</li>
+      <li>C source files as test data</li>
+    </ul>
+    <p><strong>Steps:</strong></p>
+    <ol>
+      <li>Clone the repository: <code>git clone https://github.com/YourUsername/CheatX.git</code></li>
+      <li>Navigate to the project folder: <code>cd CheatX</code></li>
+      <li>Place your C source files inside the <code>testData</code> directory.</li>
+      <li>Run the program: <code>python main.py</code></li>
+      <li>Enter the path when prompted and click <em>Generate Report</em>.</li>
+      <li>Check <code>LOG_REPORT.txt</code> for analysis logs and <code>FINAL REPORT.txt</code> for plagiarism results.</li>
+    </ol>
+  </section>
+
+  <!-- Sample Reports -->
+  <section id="reports" class="section">
+    <h2>Sample Reports</h2>
+    <p>CheatX generates two types of reports: a detailed <code>Log Report</code> and a summarized <code>Final Report</code>.</p>
+    
+    <div class="report-box">
+      <h3>Final Report Example</h3>
+      <pre>
+FINAL OUTCOME.......
+
+FILENAME1   FILENAME2   CERTAINTY   STATUS
+102.txt     105.txt     100%        PLAGIARIZED
+130.txt     160.txt     100%        PLAGIARIZED
+92.txt      96.txt      96%         PLAGIARIZED
+      </pre>
+    </div>
+    
+    <div class="report-box">
+      <h3>Log Report Example</h3>
+      <pre>
+STARTING STAGE 1...
+COMPUTING BIND SCORE...
+FORMING CLUSTERS...
+EXECUTING WALKTHROUGH SIMULATION...
+FINAL OUTCOME GENERATED ✅
+      </pre>
+    </div>
+  </section>
+
+  <!-- Contribute -->
+  <section id="contribute" class="section">
+    <h2>Contribute</h2>
+    <p>We welcome contributions from developers, researchers, and educators who want to improve CheatX.</p>
+    <ul>
+      <li>🔧 Improve detection heuristics</li>
+      <li>📊 Add new visualization methods</li>
+      <li>🌍 Extend support for other programming languages</li>
+    </ul>
+    <p>
+      Fork the repo, create a branch, and submit a pull request on 
+      <a href="https://github.com/betaSolver05609/Plagiarism-Detection" target="_blank">GitHub</a>.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>⚡ CheatX © 2025 | Built with Python & ❤️ | <a href="https://github.com/betaSolver05609/Plagiarism-Detection" target="_blank">View on GitHub</a></p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
